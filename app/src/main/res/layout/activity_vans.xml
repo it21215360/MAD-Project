@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_1"
+    tools:context=".Vans">
+
+    <TextView
+        android:id="@+id/vanPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="45dp"
+        android:text="Vans"
+        android:textColor="#0B0303"
+        android:textSize="34sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="349dp"
+        android:layout_height="583dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="18dp"
+        android:background="#BC2727"
+        android:backgroundTint="#80000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vanPage">
+
+        <ImageView
+            android:id="@+id/vanimg1"
+            android:layout_width="127dp"
+            android:layout_height="127dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/img_2" />
+
+        <TextView
+            android:id="@+id/van1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="57dp"
+            android:text="TOYOTA KDH 223"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/vanimg1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/featureList8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:text="* Seating Capacity 15"
+            android:textColor="#FDFCFC"
+            app:layout_constraintStart_toEndOf="@+id/vanimg1"
+            app:layout_constraintTop_toBottomOf="@+id/van1" />
+
+        <TextView
+            android:id="@+id/featureList9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:text="* Dual A/C"
+            android:textColor="#FDFCFC"
+            app:layout_constraintStart_toEndOf="@+id/vanimg1"
+            app:layout_constraintTop_toBottomOf="@+id/featureList8" />
+
+        <TextView
+            android:id="@+id/price5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:text="Rs 70,000/="
+            android:textColor="#E91E63"
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@+id/vanimg1"
+            app:layout_constraintTop_toBottomOf="@+id/featureList9" />
+
+        <Button
+            android:id="@+id/reservebtn4"
+            android:layout_width="268dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="21dp"
+            android:text="Reserve"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/price5" />
+
+        <ImageView
+            android:id="@+id/vanimg2"
+            android:layout_width="127dp"
+            android:layout_height="127dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="34dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/reservebtn4"
+            app:srcCompat="@drawable/img_3" />
+
+        <TextView
+            android:id="@+id/van2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="304dp"
+            android:text="TOYOTA  ALPHARD"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/vanimg1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/featureList10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="10dp"
+            android:text="* Seating Capacity 6"
+            android:textColor="#FDFCFC"
+            app:layout_constraintStart_toEndOf="@+id/vanimg2"
+            app:layout_constraintTop_toBottomOf="@+id/van2" />
+
+        <TextView
+            android:id="@+id/featureList11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:text="* Multi A/C"
+            android:textColor="#FDFCFC"
+            app:layout_constraintStart_toEndOf="@+id/vanimg2"
+            app:layout_constraintTop_toBottomOf="@+id/featureList10" />
+
+        <TextView
+            android:id="@+id/price6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:text="Rs 30,000/="
+            android:textColor="#E91E63"
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@+id/vanimg2"
+            app:layout_constraintTop_toBottomOf="@+id/featureList11" />
+
+        <Button
+            android:id="@+id/reservebtn5"
+            android:layout_width="268dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:text="Reserve"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/price6" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

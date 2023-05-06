@@ -1,0 +1,155 @@
+<resources>
+    <string name="app_name">PageOne</string>
+    <string name="vehicleType">Grab Your Keys, And Lets Roam Around Sri-Lanka With Us</string>
+    <string name="car">CAR</string>
+    <string name="van">VAN</string>
+
+    <string name="carPageLayout">Cars</string>
+    <string name="carsPage">Cars</string>
+    <string name="seats4">FOUR SEATS</string>
+    <string name="more">MORE SEATS</string>
+    <string name="linearLayout"></string>
+    <string name="horizontalLayout"></string>
+    <string name="LinearLayout2"></string>
+
+    <string name="frameLayout">fourSeats</string>
+    <string name="carimg1"></string>
+    <string name="car1">Mercedes A200</string>
+    <string name="featureList1">* A/C        *Leather Seats</string>
+    <string name="featureList2">* ConvertableRoof        *Heater</string>
+    <string name="Price1">Rs 44,000/=</string>
+    <string name="reservebtn1">RESERVE</string>
+    <string name="carimg2"></string>
+    <string name="car2">Mercedes A200</string>
+    <string name="featureList3">* A/C        *Heater</string>
+    <string name="featureList4">* ConvertableRoof</string>
+    <string name="Price2">Rs 44,000/=</string>
+    <string name="reservebtn2">RESERVE</string>
+
+
+    <string name="fragLayout2">MoreSeats</string>
+    <string name="carimg3"></string>
+    <string name="car3">Audi Q7</string>
+    <string name="featureList5">*Seating Capacity 7</string>
+    <string name="featureList6">*A/C       *Leather Seats</string>
+    <string name="featureList7">*Heater</string>
+    <string name="Price3">Rs 80,000/=</string>
+    <string name="reservebtn3">RESERVE</string>
+
+
+    <string name="vanPage">Vans</string>
+    <string name="vanimg1"></string>
+    <string name="featureList8">* Seating Capacity 15</string>
+    <string name="featureList9">* Dual A/C</string>
+    <string name="price5">Rs 70,000/=</string>
+    <string name="reservebtn4">RESERVE</string>
+    <string name="vanimg2"></string>
+    <string name="featureList10">* Seating Capacity 15</string>
+    <string name="featureList11">* Multi A/C</string>
+    <string name="price6">Rs 30,000/=</string>
+    <string name="reservebtn5">RESERVE</string>
+
+
+    <string name="reservationPageHeading">Reservation</string>
+    <string name="vehicleTypeTab">Vehicle Type</string>
+    <string name="vehicleNameTab">Vehicle Name</string>
+    <string name="needADriverCheckBox">Need A Driver</string>
+    <string name="additionalprice">*An additional amount of Rs 5000/= per day  will be added to the hireing price</string>
+    <string name="from">Reserve From</string>
+    <string name="fromDate"></string>
+    <string name="to">ReserveTo</string>
+    <string name="toDate"></string>
+    <string name="numberOfDays">Number of Days</string>
+    <string-array name="numbers">
+        <item></item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item></item>
+    </string-array>
+    <string name="total">Total Amount</string>
+    <string name="totalAmount"></string>
+    <string name="AddReservation">ADD RESERVATION</string>
+
+    <string name="successPage"></string>
+    <string name="tick"></string>
+    <string name="thankYou">THANK YOU</string>
+    <string name="success"> YOUR RESERVATION IS SUCCESSFUL</string>
+
+
+    <string-array name="spinner1">
+        <item></item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    <string-array name="spinner2">
+        <item></item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+
+    </string-array>
+
+    <string name="_400">$400</string>
+    <string name="home">Home</string>
+    <string name="luxury_hotel">Luxury Hotel</string>
+    <string name="boutique_villa">Boutique Villa</string>
+    <string name="resort">Resort</string>
+    <string name="_4_star_hotel">4 Star Hotel</string>
+    <string name="_100">$100</string>
+    <string name="_5000">$5000</string>
+    <string name="recommended">Recommended</string>
+    <string name="colombo_sri_lanka">Colombo Sri Lanka</string>
+    <string name="_400w">$400</string>
+    <string name="book">Book</string>
+    <string name="booknow">Book</string>
+    <string name="sero_hotel">Sero Hotel</string>
+    <string name="colombo7_sri_lanka">Colombo, Sri Lanka</string>
+
+    <string name="appname">Profile</string>
+    <string name="profile">Profile</string>
+    <string name="zarapatel_gmail_com">zarapatel@gmail.com</string>
+    <string name="history">History</string>
+    <string name="angel_resort">Angel Resort</string>
+    <string name="colombosri_lanka">Colombo, Sri Lanka</string>
+    <string name="colombo6_sri_lanka">Colombo, Sri Lanka</string>
+    <string name="_600">$600</string>
+    <string name="booked">Booked</string>
+    <string name="booked1">Booked</string>
+    <string name="sunset_villa">SunSet Villa</string>
+
+    <string name="appName">Hotel</string>
+    <string name="a_c">A/C</string>
+    <string name="free_parking">Free parking</string>
+    <string name="pool">Pool</string>
+    <string name="review">Review</string>
+    <string name="free_wifi">Free WIFI</string>
+    <string name="_700">$700</string>
+    <string name="_4_5">4.5</string>
+    <string name="ace_hotel">Ace Hotel</string>
+    <string name="the_inn_is_about_3_km_from_the_national_zoological_gardens_of_sri_lanka_in_dehiwala_galle_face_is_8_km_away_while_the_bandaranaike_international_airport_is_38_km_away">The inn is about 3 km from the National Zoological Gardens of Sri Lanka in Dehiwala. Galle Face is 8 km away, while the Bandaranaike International Airport is 38 km away.</string>
+    <string name="book_now">Book Now</string>
+    <string name="booking_date">Booking date</string>
+    <string name="number_of_days">Number of days</string>
+    <string name="adults">Adults</string>
+    <string name="children">Children</string>
+    <string name="_300">$300</string>
+    <string name="price">Price</string>
+    <string name="no_of_guests">No of Guests</string>
+    <string name="select_your_room">Select your Room</string>
+    <string name="book_your_hotel_today">Book your hotel today</string>
+    <string name="bookhotel">Book</string>
+    <string name="view">View</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+
+</resources>

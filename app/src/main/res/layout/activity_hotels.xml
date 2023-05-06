@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Hotels">
+
+
+    <ImageView
+        android:id="@+id/imgh5"
+        android:layout_width="405dp"
+        android:layout_height="241dp"
+        app:layout_constraintBottom_toTopOf="@+id/acehoteltxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagearrow"
+        app:srcCompat="@drawable/h5"
+        tools:ignore="MissingConstraints,NotSibling" />
+
+    <ImageView
+        android:id="@+id/imagearrow"
+        android:layout_width="61dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow" />
+
+    <TextView
+        android:id="@+id/actxt"
+        android:layout_width="58dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="140dp"
+        android:text="@string/a_c"
+        android:textColor="@color/black"
+        android:textSize="50px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ratettx" />
+
+    <TextView
+        android:id="@+id/parking"
+        android:layout_width="140dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="28dp"
+        android:text="@string/free_parking"
+        android:textColor="@color/black"
+        android:textSize="50px"
+        app:layout_constraintEnd_toStartOf="@+id/actxt"
+        app:layout_constraintStart_toStartOf="@+id/dis"
+        app:layout_constraintTop_toBottomOf="@+id/wifitxt" />
+
+    <TextView
+        android:id="@+id/pool"
+        android:layout_width="71dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="127dp"
+        android:text="@string/pool"
+        android:textColor="@color/black"
+        android:textSize="50px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/actxt" />
+
+    <TextView
+        android:id="@+id/review"
+        android:layout_width="140dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/review"
+        android:textColor="@color/black"
+        android:textSize="50px"
+        app:layout_constraintStart_toEndOf="@+id/pricetxt"
+        app:layout_constraintTop_toBottomOf="@+id/dis" />
+
+    <TextView
+        android:id="@+id/pricetxt"
+        android:layout_width="140dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:text="Price"
+        android:textColor="@color/black"
+        android:textSize="50px"
+        app:layout_constraintEnd_toEndOf="@+id/parking"
+        app:layout_constraintTop_toBottomOf="@+id/dis" />
+
+    <TextView
+        android:id="@+id/wifitxt"
+        android:layout_width="140dp"
+        android:layout_height="42dp"
+        android:backgroundTint="#b0efff"
+        android:text="@string/free_wifi"
+        android:textColor="@color/black"
+        android:textSize="50px"
+        app:layout_constraintEnd_toEndOf="@+id/parking"
+        app:layout_constraintTop_toBottomOf="@+id/ptxt" />
+
+    <TextView
+        android:id="@+id/ptxt"
+        android:layout_width="140dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/_700"
+        android:textColor="@color/black"
+        android:textSize="50px"
+        app:layout_constraintStart_toStartOf="@+id/pricetxt"
+        app:layout_constraintTop_toBottomOf="@+id/pricetxt" />
+
+    <TextView
+        android:id="@+id/ratettx"
+        android:layout_width="140dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="58dp"
+        android:text="@string/_4_5"
+        android:textColor="@color/black"
+        android:textSize="50px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/review" />
+
+    <TextView
+        android:id="@+id/acehoteltxt"
+        android:layout_width="140dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="1dp"
+        android:text="@string/ace_hotel"
+        android:textColor="@color/black"
+        android:textSize="70px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgh5" />
+
+    <TextView
+        android:id="@+id/dis"
+        android:layout_width="377dp"
+        android:layout_height="116dp"
+
+        android:text="@string/the_inn_is_about_3_km_from_the_national_zoological_gardens_of_sri_lanka_in_dehiwala_galle_face_is_8_km_away_while_the_bandaranaike_international_airport_is_38_km_away"
+        android:textColor="@color/black"
+        android:textSize="50px"
+        app:layout_constraintStart_toStartOf="@+id/acehoteltxt"
+        app:layout_constraintTop_toBottomOf="@+id/acehoteltxt" />
+
+    <ImageView
+        android:id="@+id/heartimg"
+        android:layout_width="29dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/acehoteltxt"
+        app:layout_constraintStart_toStartOf="@+id/acehoteltxt"
+        app:layout_constraintTop_toBottomOf="@+id/parking"
+        app:srcCompat="@drawable/heartion" />
+
+    <Button
+        android:id="@+id/btnoiu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/book_now"
+        app:layout_constraintBottom_toTopOf="@+id/heartred"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/heartred"
+        android:layout_width="39dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="56dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/userimg3"
+        app:srcCompat="@drawable/heart" />
+
+    <ImageView
+        android:id="@+id/homeimh"
+        android:layout_width="39dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/loupeht"
+        app:srcCompat="@drawable/home" />
+
+    <ImageView
+        android:id="@+id/userimg3"
+        android:layout_width="36dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/user" />
+
+    <ImageView
+        android:id="@+id/loupeht"
+        android:layout_width="41dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/heartred"
+        app:srcCompat="@drawable/loupe" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

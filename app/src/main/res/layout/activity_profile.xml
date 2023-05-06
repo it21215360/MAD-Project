@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+
+    <TextView
+        android:id="@+id/profiletxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profile"
+        android:textColor="@color/black"
+        android:textSize="120px"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="54dp" />
+
+    <ImageView
+        android:id="@+id/arrowimge"
+        android:layout_width="54dp"
+        android:layout_height="34dp"
+        app:layout_constraintEnd_toEndOf="@+id/profiletxt"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/profiletxt"
+        app:srcCompat="@drawable/arrow"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageView
+        android:id="@+id/imgprofile"
+        android:layout_width="170dp"
+        android:layout_height="229dp"
+        android:layout_marginStart="104dp"
+        app:layout_constraintStart_toStartOf="@+id/profiletxt"
+        app:srcCompat="@drawable/girl"
+        tools:layout_editor_absoluteY="95dp" />
+
+    <TextView
+        android:id="@+id/emiltxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/zarapatel_gmail_com"
+        android:textColor="@color/black"
+        android:textSize="50px"
+        app:layout_constraintEnd_toEndOf="@+id/imgprofile"
+        app:layout_constraintStart_toStartOf="@+id/imgprofile"
+        tools:layout_editor_absoluteY="298dp" />
+
+    <TextView
+        android:id="@+id/histry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/history"
+        android:textColor="@color/black"
+        android:textSize="60px"
+        app:layout_constraintEnd_toEndOf="@+id/imgprofile"
+        app:layout_constraintHorizontal_bias="0.761"
+        app:layout_constraintStart_toStartOf="@+id/profiletxt"
+        tools:layout_editor_absoluteY="336dp" />
+
+    <ImageView
+        android:id="@+id/h5image"
+        android:layout_width="204dp"
+        android:layout_height="217dp"
+        app:srcCompat="@drawable/h5"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="336dp" />
+
+    <TextView
+        android:id="@+id/angel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/angel_resort"
+        android:textColor="@color/black"
+        android:textSize="50px"
+        tools:layout_editor_absoluteX="243dp"
+        tools:layout_editor_absoluteY="387dp" />
+
+    <TextView
+        android:id="@+id/location1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/colombo_sri_lanka"
+        app:layout_constraintEnd_toEndOf="@+id/price2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/price2"
+        tools:layout_editor_absoluteY="424dp" />
+
+    <TextView
+        android:id="@+id/loc2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/colombo6_sri_lanka"
+        tools:layout_editor_absoluteX="243dp"
+        tools:layout_editor_absoluteY="576dp" />
+
+    <ImageView
+        android:id="@+id/placeimg"
+        android:layout_width="28dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/placeholder"
+        tools:layout_editor_absoluteX="367dp"
+        tools:layout_editor_absoluteY="565dp" />
+
+    <ImageView
+        android:id="@+id/imgplace"
+        android:layout_width="28dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/placeholder"
+        tools:layout_editor_absoluteX="364dp"
+        tools:layout_editor_absoluteY="413dp" />
+
+    <TextView
+        android:id="@+id/price2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$500"
+        android:textSize="50px"
+        tools:layout_editor_absoluteX="243dp"
+        tools:layout_editor_absoluteY="450dp" />
+
+    <TextView
+        android:id="@+id/price5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_600"
+        android:textSize="50px"
+        tools:layout_editor_absoluteX="243dp"
+        tools:layout_editor_absoluteY="598dp" />
+
+    <Button
+        android:id="@+id/bookedbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E784D3"
+        android:text="@string/booked"
+        tools:layout_editor_absoluteX="302dp"
+        tools:layout_editor_absoluteY="471dp" />
+
+    <Button
+        android:id="@+id/bookedbtn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E784D3"
+        android:text="@string/booked1"
+        tools:layout_editor_absoluteX="302dp"
+        tools:layout_editor_absoluteY="623dp" />
+
+    <ImageView
+        android:id="@+id/h6"
+        android:layout_width="209dp"
+        android:layout_height="138dp"
+        app:srcCompat="@drawable/h6"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="553dp" />
+
+    <TextView
+        android:id="@+id/villatxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sunset_villa"
+        android:textColor="@color/black"
+        android:textSize="50px"
+        tools:layout_editor_absoluteX="244dp"
+        tools:layout_editor_absoluteY="539dp" />
+
+    <ImageView
+        android:id="@+id/homeimgt"
+        android:layout_width="41dp"
+        android:layout_height="44dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/home" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="36dp"
+        android:layout_height="39dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/heart" />
+
+    <ImageView
+        android:id="@+id/heartreda"
+        android:layout_width="37dp"
+        android:layout_height="38dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.374"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/loupe" />
+
+    <ImageView
+        android:id="@+id/userimg"
+        android:layout_width="36dp"
+        android:layout_height="44dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.949"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/user" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

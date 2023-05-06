@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <item name="edBookingDate" type="id" />
+        <item name="edNoOfDays" type="id" />
+        <item name="edNoOfAdults" type="id" />
+        <item name="edNoOfChildren" type="id" />
+        <item name="spRoomType" type="id" />
+        <item name="btnAdd" type="id" />
+        <item name="btnView" type="id" />
+        <item name="btnUpdate" type="id" />
+        <item name="recyclerView" type="id"/>
+
+</resources>

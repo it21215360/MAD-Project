@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main">
+
+    <TextView
+        android:id="@+id/texthome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/home"
+        android:textColor="@color/black"
+        android:textSize="120px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/arrowimg" />
+
+    <ImageView
+        android:id="@+id/arrowimg"
+        android:layout_width="54dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow" />
+
+    <Button
+        android:id="@+id/btn_luxury"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+
+        android:layout_marginTop="212dp"
+        android:text="@string/luxury_hotel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_villa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="212dp"
+        android:text="@string/boutique_villa"
+        app:layout_constraintStart_toEndOf="@+id/btn_luxury"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_resort"
+        android:layout_width="149dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/resort"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_luxury" />
+
+    <Button
+        android:id="@+id/btn_5star"
+        android:layout_width="157dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="28dp"
+
+        android:layout_marginTop="32dp"
+        android:text="@string/_4_star_hotel"
+        app:layout_constraintStart_toEndOf="@+id/btn_resort"
+        app:layout_constraintTop_toBottomOf="@+id/btn_villa" />
+
+    <TextView
+        android:id="@+id/rectext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="56dp"
+        android:text="@string/recommended"
+        android:textColor="@color/black"
+        android:textSize="60px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_resort" />
+
+    <ImageView
+        android:id="@+id/h2img"
+        android:layout_width="210dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectext"
+        app:srcCompat="@drawable/h2" />
+
+    <TextView
+        android:id="@+id/marinoh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="84dp"
+        android:text="Marino Beach Hotel"
+        android:textColor="@color/black"
+        android:textSize="50px"
+        app:layout_constraintStart_toEndOf="@+id/h2img"
+        app:layout_constraintTop_toBottomOf="@+id/btn_5star" />
+
+    <TextView
+        android:id="@+id/colombohtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/colombo_sri_lanka"
+        app:layout_constraintStart_toEndOf="@+id/h2img"
+        app:layout_constraintTop_toBottomOf="@+id/marinoh" />
+
+    <ImageView
+        android:id="@+id/locationimg"
+        android:layout_width="22dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toEndOf="@+id/colombohtxt"
+        app:layout_constraintTop_toBottomOf="@+id/marinoh"
+        app:srcCompat="@drawable/placeholder" />
+
+    <ImageView
+        android:id="@+id/placeig"
+        android:layout_width="20dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="604dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/locationtxt"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/placeholder" />
+
+    <TextView
+        android:id="@+id/priceht"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/_400w"
+        android:textSize="50px"
+        app:layout_constraintStart_toEndOf="@+id/h2img"
+        app:layout_constraintTop_toBottomOf="@+id/colombohtxt" />
+
+    <TextView
+        android:id="@+id/pricetxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="136dp"
+        android:text="@string/_400"
+        android:textSize="50px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/locationtxt" />
+
+    <Button
+        android:id="@+id/bookbtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="28dp"
+        android:text="@string/book"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/locationimg" />
+
+    <Button
+        android:id="@+id/bookbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="140dp"
+        android:text="@string/booknow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="36dp"
+        android:layout_height="31dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/heart" />
+
+    <ImageView
+        android:id="@+id/homeimg"
+        android:layout_width="42dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/home" />
+
+    <ImageView
+        android:id="@+id/loupeimg"
+        android:layout_width="37dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/loupe" />
+
+    <ImageView
+        android:id="@+id/userimg"
+        android:layout_width="64dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/user" />
+
+    <ImageView
+        android:id="@+id/h1img"
+        android:layout_width="201dp"
+        android:layout_height="136dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/h2img"
+        app:srcCompat="@drawable/h1" />
+
+    <TextView
+        android:id="@+id/seroimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/sero_hotel"
+        android:textColor="@color/black"
+        android:textSize="50px"
+        app:layout_constraintStart_toEndOf="@+id/h1img"
+        app:layout_constraintTop_toBottomOf="@+id/bookbtn2" />
+
+    <TextView
+        android:id="@+id/locationtxt"
+        android:layout_width="139dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/colombo7_sri_lanka"
+        app:layout_constraintStart_toEndOf="@+id/h1img"
+        app:layout_constraintTop_toBottomOf="@+id/seroimg" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainSelection"
+    android:background="@drawable/main_selection">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:backgroundTint="#81437FB3">
+
+        <Button
+            android:id="@+id/hotelsHome"
+            android:layout_width="177dp"
+            android:layout_height="177dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="198dp"
+            android:background="@drawable/buttonborder"
+            android:text="HOTELS"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/resturantPages"
+            android:layout_width="177dp"
+            android:layout_height="177dp"
+            android:layout_marginTop="198dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/buttonborder"
+            android:text="RESTURANTS"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/safari"
+            android:layout_width="177dp"
+            android:layout_height="177dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/buttonborder"
+            android:text="SAFARI"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hotelsHome" />
+
+        <Button
+            android:id="@+id/vehicleMainPage"
+            android:layout_width="177dp"
+            android:layout_height="177dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/buttonborder"
+            android:text="VEHICLES"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/resturantPages" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

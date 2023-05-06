@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="RoomType">
+    <item>Double Bed Room</item>
+    <item>Single Bed Room</item>
+    <item>2 Double Bed Room</item>
+    </string-array>
+
+</resources>
