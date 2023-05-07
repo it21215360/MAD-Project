@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResturantMainPage"
+    android:background="@drawable/apic3"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ml1"
+        android:layout_width="match_parent"
+        android:layout_height="680dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Restaurants"
+            android:elevation="12dp"
+            android:textStyle="italic"
+            android:textColor="@color/black"
+            android:textSize="36sp"
+            android:background="@color/white"
+            android:alpha="0.9"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="36dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toTopOf="@id/ll2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/imageFilterView"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            tools:ignore="ImageContrastCheck"
+            tools:layout_editor_absoluteX="81dp"
+            tools:layout_editor_absoluteY="582dp"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+        <TextView
+            android:id="@+id/name1TV"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="@string/res2"
+            android:textAlignment="center"
+            android:textColor="#1A237E"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:onClick="Next"
+            android:alpha="0.8"
+            android:backgroundTint="@color/black"
+            android:text="@string/nextbtn"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:ignore="VisualLintButtonSize,DuplicateSpeakableTextCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="36dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/ll1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/imageFilterView1"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            tools:ignore="ImageContrastCheck"
+            tools:layout_editor_absoluteX="81dp"
+            tools:layout_editor_absoluteY="582dp"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+        <TextView
+            android:id="@+id/name2TV"
+            android:layout_width="220dp"
+            android:layout_height="match_parent"
+            android:text="@string/res3"
+            android:textAlignment="center"
+            android:textColor="#1A237E"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:onClick="Next"
+            android:text="@string/nextbtn"
+            android:alpha="0.8"
+            android:backgroundTint="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:ignore="VisualLintButtonSize,VisualLintBounds" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll3"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="36dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/ll2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/imageFilter2View"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            tools:ignore="ImageContrastCheck"
+            tools:layout_editor_absoluteX="81dp"
+            tools:layout_editor_absoluteY="582dp"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+        <TextView
+            android:id="@+id/name3TV"
+            android:layout_width="220dp"
+            android:layout_height="match_parent"
+            android:text="@string/res4"
+            android:textAlignment="center"
+            android:textColor="#1A237E"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:onClick="Next"
+            android:text="@string/nextbtn"
+            android:alpha="0.8"
+            android:backgroundTint="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:ignore="VisualLintButtonSize,VisualLintBounds" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll4"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="36dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/ll3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/imageFilter3View"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            tools:ignore="ImageContrastCheck"
+            tools:layout_editor_absoluteX="81dp"
+            tools:layout_editor_absoluteY="582dp"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+        <TextView
+            android:id="@+id/name4TV"
+            android:layout_width="220dp"
+            android:layout_height="match_parent"
+            android:text="@string/res5"
+            android:textAlignment="center"
+            android:textColor="#1A237E"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:onClick="Next"
+            android:text="@string/nextbtn"
+            android:alpha="0.8"
+            android:backgroundTint="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:ignore="VisualLintButtonSize,VisualLintBounds" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll5"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="36dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/ll4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/imageFilter4View"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            tools:ignore="ImageContrastCheck"
+            tools:layout_editor_absoluteX="81dp"
+            tools:layout_editor_absoluteY="582dp"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+        <TextView
+            android:id="@+id/name5TV"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="@string/res1"
+            android:textAlignment="center"
+            android:textColor="#1A237E"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:onClick="Next"
+            android:alpha="0.8"
+            android:backgroundTint="@color/black"
+            android:text="@string/nextbtn"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:ignore="VisualLintButtonSize" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/nvl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ml1"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:alpha="0.8"
+            android:background="@color/ashgreen">
+
+            <ImageView
+                android:id="@+id/homebtn"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:contentDescription="@string/title1"
+                app:srcCompat="@drawable/baseline_home_24" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:alpha="0.8"
+            android:background="@color/ashgreen">
+
+            <ImageView
+                android:id="@+id/searchbtn"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/baseline_search_24" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:alpha="0.8"
+            android:background="@color/ashgreen">
+
+            <ImageView
+                android:id="@+id/calbtn"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/baseline_calendar_month_24" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@color/ashgreen"
+            android:layout_marginEnd="3dp"
+            android:alpha="0.8">
+
+            <ImageView
+                android:id="@+id/upgbtn"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/baseline_account_circle_24" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

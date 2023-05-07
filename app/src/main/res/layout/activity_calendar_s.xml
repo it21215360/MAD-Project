@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Calendar_S"
+    android:background="@drawable/pic4"
+    android:alpha="0.9">
+
+    <CalendarView
+        android:id="@+id/calendarView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/white"
+        android:alpha="0.8"/>
+
+    <EditText
+        android:id="@+id/etxt"
+        android:layout_width="219dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="216dp"
+        android:alpha="0.8"
+        android:autofillHints=""
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="@string/add_schedule"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/calendarView2"
+        app:layout_constraintVertical_bias="0.46"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/etxttime"
+        android:layout_width="219dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:alpha="0.8"
+        android:autofillHints=""
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="@string/entry2"
+        android:inputType="time"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etxt"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/subbtn"
+        android:layout_width="119dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="28dp"
+        android:onClick="buttonSaveEvent"
+        android:backgroundTint="@color/black"
+        app:circularflow_radiusInDP="10dp"
+        android:text="@string/Insert"
+        android:alpha="0.7"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/etxttime"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/subbtnupdate"
+        android:layout_width="119dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="135dp"
+        android:layout_marginBottom="50dp"
+        android:onClick="buttonSaveEvent"
+        android:textStyle="bold"
+        android:text="@string/updateentry"
+        android:alpha="0.7"
+        android:textSize="20sp"
+        android:backgroundTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.893"
+        app:layout_constraintLeft_toRightOf="@id/etxttime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView2"
+        app:layout_constraintVertical_bias="0.838" />
+
+    <TextView
+        android:id="@+id/calTv"
+        android:layout_width="363dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="126dp"
+        android:alpha="0.5"
+        android:background="@color/white"
+        android:layout_marginStart="10dp"
+        android:text="@string/msg2"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView2"
+        app:layout_constraintVertical_bias="0.307"
+        tools:ignore="TextContrastCheck" />
+
+
+    <LinearLayout
+        android:id="@+id/nvl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:alpha="0.8"
+            android:background="@color/ashgreen">
+
+            <ImageView
+                android:id="@+id/homebtn"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:contentDescription="@string/title1"
+                app:srcCompat="@drawable/baseline_home_24" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:alpha="0.8"
+            android:background="@color/ashgreen">
+
+            <ImageView
+                android:id="@+id/searchbtn"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/baseline_search_24" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:alpha="0.8"
+            android:background="@color/ashgreen">
+
+            <ImageView
+                android:id="@+id/calbtn"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/baseline_calendar_month_24" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@color/ashgreen"
+            android:layout_marginEnd="3dp"
+            android:alpha="0.8">
+
+            <ImageView
+                android:id="@+id/upgbtn"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/baseline_account_circle_24" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

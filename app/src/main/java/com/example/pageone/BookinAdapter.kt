@@ -5,7 +5,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-//import com.example.tourist_guide_app.R
 
 class BookingAdapter : RecyclerView.Adapter<BookingAdapter.BookingViewHolder>() {
     private var stdList: ArrayList<BookingModel> = ArrayList()

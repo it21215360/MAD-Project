@@ -152,4 +152,24 @@
     <string name="update">Update</string>
     <string name="delete">Delete</string>
 
+
+
+
+    <string name="title1">Home</string>
+    <string name="Insert">Save</string>
+    <string name="msg2">No Schedule</string>
+    <string name="add_schedule">+Add Schedule</string>
+    <string name="entry2">+Add Time</string>
+    <string name="updateentry">Update</string>
+    <string name="res1">Yue Chuan</string>
+    <string name="res2">Kang\'s Kitchen</string>
+    <string name="res3">King\'s SteakBar</string>
+    <string name="nextbtn"><![CDATA[->]]></string>
+    <string name="res4">Cinnomon Red</string>
+    <string name="res5">The Grill</string>
+    <string name="star5">5 Stars</string>
+    <string name="star4">4 Stars</string>
+    <string name="star3">3 Stars</string>
+    <string name="colombo">Colombo</string>
+    <string name="heading">Restaurants</string>
 </resources>

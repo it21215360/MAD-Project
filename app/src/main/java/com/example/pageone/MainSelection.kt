@@ -28,5 +28,11 @@ class MainSelection : AppCompatActivity() {
             val intent3 = Intent(this, home::class.java)
             startActivity(intent3)
         }
+
+        val resturantbtn = findViewById<Button>(R.id.resturantPages)
+        resturantbtn.setOnClickListener {
+            val intent3 = Intent(this, ResturantMainPage::class.java)
+            startActivity(intent3)
+        }
     }
 }

@@ -13,6 +13,7 @@
         android:text="@string/profile"
         android:textColor="@color/black"
         android:textSize="120px"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="54dp" />
 
@@ -20,149 +21,176 @@
         android:id="@+id/arrowimge"
         android:layout_width="54dp"
         android:layout_height="34dp"
-        app:layout_constraintEnd_toEndOf="@+id/profiletxt"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/profiletxt"
-        app:srcCompat="@drawable/arrow"
-        tools:layout_editor_absoluteY="16dp" />
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow" />
 
     <ImageView
         android:id="@+id/imgprofile"
         android:layout_width="170dp"
         android:layout_height="229dp"
-        android:layout_marginStart="104dp"
-        app:layout_constraintStart_toStartOf="@+id/profiletxt"
-        app:srcCompat="@drawable/girl"
-        tools:layout_editor_absoluteY="95dp" />
+        app:layout_constraintBottom_toTopOf="@+id/histry"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.738"
+        app:srcCompat="@drawable/girl" />
 
     <TextView
         android:id="@+id/emiltxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="-1dp"
         android:text="@string/zarapatel_gmail_com"
         android:textColor="@color/black"
         android:textSize="50px"
         app:layout_constraintEnd_toEndOf="@+id/imgprofile"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/imgprofile"
-        tools:layout_editor_absoluteY="298dp" />
+        app:layout_constraintTop_toBottomOf="@+id/imgprofile" />
 
     <TextView
         android:id="@+id/histry"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
         android:text="@string/history"
         android:textColor="@color/black"
+
         android:textSize="60px"
-        app:layout_constraintEnd_toEndOf="@+id/imgprofile"
-        app:layout_constraintHorizontal_bias="0.761"
-        app:layout_constraintStart_toStartOf="@+id/profiletxt"
-        tools:layout_editor_absoluteY="336dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emiltxt" />
 
     <ImageView
         android:id="@+id/h5image"
         android:layout_width="204dp"
         android:layout_height="217dp"
-        app:srcCompat="@drawable/h5"
-        tools:layout_editor_absoluteX="14dp"
-        tools:layout_editor_absoluteY="336dp" />
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/location1"
+        app:layout_constraintTop_toBottomOf="@+id/histry"
+        app:srcCompat="@drawable/h5" />
 
     <TextView
         android:id="@+id/angel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="58dp"
         android:text="@string/angel_resort"
         android:textColor="@color/black"
         android:textSize="50px"
-        tools:layout_editor_absoluteX="243dp"
-        tools:layout_editor_absoluteY="387dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emiltxt" />
 
     <TextView
         android:id="@+id/location1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="3dp"
         android:text="@string/colombo_sri_lanka"
-        app:layout_constraintEnd_toEndOf="@+id/price2"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/price2"
-        tools:layout_editor_absoluteY="424dp" />
+        app:layout_constraintEnd_toStartOf="@+id/imgplace"
+        app:layout_constraintTop_toBottomOf="@+id/angel" />
 
     <TextView
         android:id="@+id/loc2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="3dp"
         android:text="@string/colombo6_sri_lanka"
-        tools:layout_editor_absoluteX="243dp"
-        tools:layout_editor_absoluteY="576dp" />
+        app:layout_constraintEnd_toStartOf="@+id/placeimg"
+        app:layout_constraintTop_toBottomOf="@+id/villatxt" />
 
     <ImageView
         android:id="@+id/placeimg"
         android:layout_width="28dp"
         android:layout_height="30dp"
-        app:srcCompat="@drawable/placeholder"
-        tools:layout_editor_absoluteX="367dp"
-        tools:layout_editor_absoluteY="565dp" />
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bookedbtn"
+        app:srcCompat="@drawable/placeholder" />
 
     <ImageView
         android:id="@+id/imgplace"
         android:layout_width="28dp"
         android:layout_height="30dp"
-        app:srcCompat="@drawable/placeholder"
-        tools:layout_editor_absoluteX="364dp"
-        tools:layout_editor_absoluteY="413dp" />
+        android:layout_marginTop="413dp"
+        android:layout_marginEnd="19dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/placeholder" />
 
     <TextView
         android:id="@+id/price2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="16dp"
         android:text="$500"
         android:textSize="50px"
-        tools:layout_editor_absoluteX="243dp"
-        tools:layout_editor_absoluteY="450dp" />
+        app:layout_constraintEnd_toStartOf="@+id/bookedbtn"
+        app:layout_constraintTop_toBottomOf="@+id/location1" />
 
     <TextView
         android:id="@+id/price5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="125dp"
         android:text="@string/_600"
         android:textSize="50px"
-        tools:layout_editor_absoluteX="243dp"
-        tools:layout_editor_absoluteY="598dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loc2" />
 
     <Button
         android:id="@+id/bookedbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
         android:backgroundTint="#E784D3"
         android:text="@string/booked"
-        tools:layout_editor_absoluteX="302dp"
-        tools:layout_editor_absoluteY="471dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/location1" />
 
     <Button
         android:id="@+id/bookedbtn3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
         android:backgroundTint="#E784D3"
         android:text="@string/booked1"
-        tools:layout_editor_absoluteX="302dp"
-        tools:layout_editor_absoluteY="623dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loc2" />
 
     <ImageView
-        android:id="@+id/h6"
+        android:id="@+id/h6img"
         android:layout_width="209dp"
         android:layout_height="138dp"
-        app:srcCompat="@drawable/h6"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="553dp" />
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/homeimgt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/h6" />
 
     <TextView
         android:id="@+id/villatxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="48dp"
         android:text="@string/sunset_villa"
         android:textColor="@color/black"
         android:textSize="50px"
-        tools:layout_editor_absoluteX="244dp"
-        tools:layout_editor_absoluteY="539dp" />
+        app:layout_constraintEnd_toEndOf="@+id/placeimg"
+        app:layout_constraintStart_toStartOf="@+id/loc2"
+        app:layout_constraintTop_toBottomOf="@+id/bookedbtn" />
 
     <ImageView
         android:id="@+id/homeimgt"
@@ -203,5 +231,4 @@
         app:layout_constraintHorizontal_bias="0.949"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/user" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

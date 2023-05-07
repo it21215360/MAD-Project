@@ -94,6 +94,9 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
                 + ")")
         db?.execSQL(createTblStudent)
 
+        //RESTURANTS - IT21
+        db?.execSQL("create Table Res_Schedules(Date TEXT primary key, Restaurant TEXT,time TEXT)")
+
     }
 
 
@@ -105,6 +108,8 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
         db?.execSQL("DROP TABLE IF EXISTS $TABLE_NAME_SAFARI")
 
         db!!.execSQL("DROP TABLE IF EXISTS $TABLE_BOOKING")
+
+        db.execSQL("drop Table if exists Res_Schedules")
         onCreate(db)
 
 
@@ -340,4 +345,62 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
         db.close()
         return success
         }
+
+
+    //INSERT RESTURANT DATA - IT21198090
+    fun insertuserdata(Date: String?, Restaurant: String?, time: String?): Boolean {
+        val db = this.writableDatabase
+        val contentValues = ContentValues()
+        contentValues.put("Date", Date)
+        contentValues.put("Restaurant", Restaurant)
+        contentValues.put("time", time)
+        return if (Date != null) { //additions
+            val result = db.insert("Res_Schedules", null, contentValues)
+            result != -1L
+        } else {
+            false
+        }
+    }
+
+    //UPDATE RESTURANT DATA - IT21198090
+    fun updateuserdata(Date: String, Restaurant: String?, time: String?): Boolean {
+        val db = this.writableDatabase
+        val contentValues = ContentValues()
+        contentValues.put("Restaurant", Restaurant)
+        contentValues.put("time", time)
+        val cursor = db.rawQuery("select * from Res_Schedules where Date=?", arrayOf(Date))
+        return if (cursor.count > 0) {
+            val result =
+                db.update("Res_Schedules", contentValues, "Date=?", arrayOf(Date))
+                    .toLong()
+            result != -1L
+        } else {
+            false
+        }
+    }
+
+    //DELETE RESTURANT DATA - IT21198090
+
+    fun deleteuserdata(Date: String): Boolean {
+        val db = this.writableDatabase
+        val cursor = db.rawQuery("select * from Res_Schedules where Date=?", arrayOf(Date))
+        return if (cursor.count > 0) {
+            val result = db.delete("Res_Schedules", "Date=?", arrayOf(Date)).toLong()
+            result != -1L
+        } else {
+            false
+        }
+    }
+
+    //GET RESTURANT DATA - IT21198090
+    fun getdata(): Cursor {
+        val db = this.writableDatabase
+        return db.rawQuery("select * from Res_Schedules", null)
+    }
+
+    fun getdate(): Cursor {
+        val db = this.writableDatabase
+        return db.rawQuery("select Restaurant from Res_Schedules", null)
+    }
+
 }

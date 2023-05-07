@@ -53,6 +53,17 @@ class Bookinghotel : AppCompatActivity() {
         }
     }
 
+    private fun initView() {
+        edBookingDate = findViewById(R.id.edBookingDate)
+        edNoOfDays = findViewById(R.id.edNoOfDays)
+        edNoOfAdults = findViewById(R.id.edNoOfAdults)
+        edNoOfChildren = findViewById(R.id.edNoOfChildren)
+        spRoomType = findViewById(R.id.spRoomType)
+        btnAdd = findViewById(R.id.btnAdd)
+        btnView = findViewById(R.id.btnView)
+        btnUpdate = findViewById(R.id.btnUpdate)
+    }
+
     private fun updateBooking() {
         val bookingDate = edBookingDate.text.toString()
         val noOfDays = edNoOfDays.text.toString()
@@ -144,14 +155,5 @@ class Bookinghotel : AppCompatActivity() {
         recyclerView.adapter = adapter
     }
 
-    private fun initView(){
-        edBookingDate = findViewById(R.id.edBookingDate)
-        edNoOfDays = findViewById(R.id.edNoOfDays)
-        edNoOfAdults = findViewById(R.id.edNoOfAdults)
-        edNoOfChildren = findViewById(R.id.edNoOfChildren)
-        spRoomType = findViewById(R.id.spRoomType)
-        btnAdd = findViewById(R.id.btnAdd)
-        btnView = findViewById(R.id.btnView)
-        btnUpdate= findViewById(R.id.btnUpdate)
-        }
+
 }
