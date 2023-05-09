@@ -12,28 +12,20 @@
         android:theme="@style/Theme.PageOne"
         tools:targetApi="31">
         <activity
-            android:name=".hotelExplore"
-            android:exported="false" />
-        <activity
-            android:name=".Marinohotel"
-            android:exported="false" />
-        <activity
             android:name=".hotelbookingconfirm"
             android:exported="false" />
         <activity
-            android:name=".Userpage_S"
-            android:exported="false" />
-        <activity
-            android:name=".Calendar_S"
-            android:exported="false" />
-        <activity
-            android:name=".Search_S"
-            android:exported="false" />
-        <activity
-            android:name=".ResturantMainPage"
-            android:exported="false" />
-        <activity
             android:name=".Likehotel"
+            android:exported="false" />
+        <activity
+            android:name=".hotelExplore"
+            android:exported="false"/>
+
+        <activity
+            android:name=".BookingModel"
+            android:exported="false" />
+        <activity
+            android:name=".Marinohotel"
             android:exported="false" />
         <activity
             android:name=".Profile"
@@ -53,6 +45,21 @@
         <activity
             android:name=".home"
             android:exported="false" />
+
+
+        <activity
+            android:name=".Userpage_S"
+            android:exported="false" />
+        <activity
+            android:name=".Calendar_S"
+            android:exported="false" />
+        <activity
+            android:name=".Search_S"
+            android:exported="false" />
+        <activity
+            android:name=".ResturantMainPage"
+            android:exported="false" />
+
         <activity
             android:name=".Thank"
             android:exported="false" />
