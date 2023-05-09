@@ -12,18 +12,18 @@ class home : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-       val homebutton = findViewById<Button>(R.id.btn_1)
+        val homebutton = findViewById<Button>(R.id.btn_1)
         homebutton.setOnClickListener {
             val intent = Intent(this, Main::class.java)
             startActivity(intent)
         }
 
-         /*   val homebtn = findViewById<TextView>(R.id.textView5)
-            homebtn.setOnClickListener {
-                val intent = Intent(this, Hotels::class.java)
-                startActivity(intent)
-            }*/
+        /*   val homebtn = findViewById<TextView>(R.id.textView5)
+           homebtn.setOnClickListener {
+               val intent = Intent(this, Hotels::class.java)
+               startActivity(intent)
+           }*/
 
 
-        }
+    }
 }

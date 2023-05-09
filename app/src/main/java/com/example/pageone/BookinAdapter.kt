@@ -1,12 +1,14 @@
 package com.example.pageone
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.pageone.BookingAdapter.*
 
-class BookingAdapter : RecyclerView.Adapter<BookingAdapter.BookingViewHolder>() {
+class BookingAdapter : RecyclerView.Adapter<BookingViewHolder>()  {
     private var stdList: ArrayList<BookingModel> = ArrayList()
     private var onClickItem:((BookingModel) -> Unit)? =null
     private var onClickDeleteItem:((BookingModel) -> Unit)? =null
@@ -18,7 +20,7 @@ class BookingAdapter : RecyclerView.Adapter<BookingAdapter.BookingViewHolder>() 
         LayoutInflater.from(parent.context).inflate(R.layout.booking_card, parent, false)
     )
 
-    override fun onBindViewHolder(holder: BookingAdapter.BookingViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: BookingViewHolder, position: Int) {
         val std = stdList[position]
         holder.bindView(std)
         holder.itemView.setOnClickListener { onClickItem?.invoke(std) }
@@ -29,6 +31,7 @@ class BookingAdapter : RecyclerView.Adapter<BookingAdapter.BookingViewHolder>() 
         return stdList.size
     }
 
+    @SuppressLint("NotifyDataSetChanged")
     fun addItems(items: ArrayList<BookingModel>){
         this.stdList = items
         notifyDataSetChanged()
@@ -43,6 +46,7 @@ class BookingAdapter : RecyclerView.Adapter<BookingAdapter.BookingViewHolder>() 
         private var room_type = view.findViewById<TextView>(R.id.tvRoomType)
         var btnDelete = view.findViewById<TextView>(R.id.btnDelete)
 
+        @SuppressLint("SetTextI18n")
         fun bindView(std: BookingModel){
             id.text = "ID : " + std.id.toString()
             booking_date.text = "Booking Date : " + std.booking_date
@@ -59,6 +63,5 @@ class BookingAdapter : RecyclerView.Adapter<BookingAdapter.BookingViewHolder>() 
 
     fun setonClickDeleteItem(callback: (BookingModel) -> Unit){
         this.onClickDeleteItem = callback
-        }
-
+    }
 }

@@ -334,6 +334,7 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
         db.close()
         return success
     }
+
     //DELETE HOTELS BOOKINGS - IT21307362
     fun deleteBookingById(id: Int): Int {
         val db = this.writableDatabase
@@ -344,7 +345,9 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
         val success = db.delete(TABLE_BOOKING, "id=$id", null)
         db.close()
         return success
-        }
+    }
+
+    //search hotel IT21307362
 
 
     //INSERT RESTURANT DATA - IT21198090

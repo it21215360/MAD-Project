@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Marinohotel">
+
+
+    <Button
+        android:id="@+id/btnoiu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="48dp"
+        android:text="@string/book_now"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aceparking" />
+
+    <ImageView
+        android:id="@+id/imghace"
+        android:layout_width="405dp"
+        android:layout_height="241dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/h2"
+        tools:ignore="MissingConstraints,NotSibling" />
+
+    <ImageView
+        android:id="@+id/imagearrowace"
+        android:layout_width="61dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="316dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow" />
+
+    <TextView
+        android:id="@+id/acetxt"
+        android:layout_width="58dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="32dp"
+        android:text="@string/a_c"
+        android:textColor="@color/black"
+        android:textSize="50px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wifiacetxt" />
+
+    <TextView
+        android:id="@+id/aceparking"
+        android:layout_width="140dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/free_parking"
+        android:textColor="@color/black"
+        android:textSize="50px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rateacettx" />
+
+    <TextView
+        android:id="@+id/reviewace"
+        android:layout_width="140dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/review"
+        android:textColor="@color/black"
+        android:textSize="50px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/daceis" />
+
+    <TextView
+        android:id="@+id/pricetxtacec"
+        android:layout_width="140dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="Price"
+        android:textColor="@color/black"
+        android:textSize="50px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/daceis" />
+
+    <TextView
+        android:id="@+id/wifiacetxt"
+        android:layout_width="140dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="32dp"
+        android:backgroundTint="#b0efff"
+        android:text="@string/free_wifi"
+        android:textColor="@color/black"
+        android:textSize="50px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pxtace" />
+
+    <TextView
+        android:id="@+id/pxtace"
+        android:layout_width="140dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="32dp"
+        android:text="$800"
+        android:textColor="@color/black"
+
+        android:textSize="50px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pricetxtacec" />
+
+    <TextView
+        android:id="@+id/rateacettx"
+        android:layout_width="140dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/_4_5"
+        android:textColor="@color/black"
+        android:textSize="50px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reviewace" />
+
+    <TextView
+        android:id="@+id/acehotelacetxt"
+        android:layout_width="240dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="Marino Beach Hotel"
+        android:textColor="@color/black"
+        android:textSize="70px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imghace" />
+
+    <TextView
+        android:id="@+id/daceis"
+        android:layout_width="377dp"
+        android:layout_height="116dp"
+
+        android:layout_marginStart="32dp"
+        android:text="@string/the_inn_is_about_3_km_from_the_national_zoological_gardens_of_sri_lanka_in_dehiwala_galle_face_is_8_km_away_while_the_bandaranaike_international_airport_is_38_km_away"
+        android:textColor="@color/black"
+        android:textSize="50px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/acehotelacetxt" />
+
+    <ImageView
+        android:id="@+id/heartaceimg"
+        android:layout_width="29dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/acetxt"
+        app:srcCompat="@drawable/heartion" />
+
+    <ImageView
+        android:id="@+id/heartredace"
+        android:layout_width="39dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="132dp"
+
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/heart" />
+
+    <ImageView
+        android:id="@+id/homeimhace"
+        android:layout_width="39dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="12dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/home" />
+
+    <ImageView
+        android:id="@+id/userimg3ace"
+        android:layout_width="36dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/user" />
+
+    <ImageView
+        android:id="@+id/loupeaceht"
+        android:layout_width="41dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginBottom="8dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/loupe" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

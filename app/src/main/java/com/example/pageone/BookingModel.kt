@@ -14,6 +14,6 @@ class BookingModel (
         fun getAutoId():Int{
             val random = Random()
             return random.nextInt(100)
-            }
         }
+    }
 }

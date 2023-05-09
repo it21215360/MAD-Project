@@ -16,7 +16,7 @@ class SafariMainPage : AppCompatActivity() {
         button_main.setOnClickListener{
             val intent1 = Intent(this , Explore::class.java)
             startActivity(intent1)
-            }
+        }
 
     }
 }

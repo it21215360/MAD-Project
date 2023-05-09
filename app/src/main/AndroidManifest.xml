@@ -12,6 +12,15 @@
         android:theme="@style/Theme.PageOne"
         tools:targetApi="31">
         <activity
+            android:name=".hotelExplore"
+            android:exported="false" />
+        <activity
+            android:name=".Marinohotel"
+            android:exported="false" />
+        <activity
+            android:name=".hotelbookingconfirm"
+            android:exported="false" />
+        <activity
             android:name=".Userpage_S"
             android:exported="false" />
         <activity
@@ -24,7 +33,7 @@
             android:name=".ResturantMainPage"
             android:exported="false" />
         <activity
-            android:name=".Likes"
+            android:name=".Likehotel"
             android:exported="false" />
         <activity
             android:name=".Profile"

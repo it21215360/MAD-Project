@@ -1,7 +1,6 @@
 package com.example.pageone
 
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -16,7 +15,7 @@ class Details : AppCompatActivity() {
 
         var button_back_details = findViewById<Button>(R.id.button_back_details)
         button_back_details.setOnClickListener {
-            val intent1 = Intent(this, Explore::class.java)
+            val intent1 = Intent(this, hotelExplore::class.java)
             startActivity(intent1)
         }
 
